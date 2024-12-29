@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Ahmed Amir</title>
+    <style>
+        /* تنسيق عام للموقع */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* رأس الصفحة */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* قسم المهام */
+        #tasks {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #tasks h2 {
+            color: #4CAF50;
+        }
+
+        #tasks ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #tasks li {
+            background-color: #f1f1f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحباً في منصة Alpha Ahmed Amir</h1>
+        <p>هذه المنصة توفر فرص ربح عبر إتمام المهام اليومية</p>
+    </header>
+
+    <section id="tasks">
+        <h2>المهام اليومية</h2>
+        <ul>
+            <li>شاهد إعلان 1</li>
+            <li>شاهد إعلان 2</li>
+            <li>شاهد إعلان 3</li>
+            <li>شاهد إعلان 4</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>حقوق الطبع والنشر © 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // مثال لتفاعل مع المستخدم: عندما يضغط المستخدم على أي مهمة، يتم تغيير لونها.
+        document.querySelectorAll('#tasks li').forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.backgroundColor = '#76c7c0'; // تغيير اللون عند النقر
+                alert("لقد أكملت المهمة بنجاح!");
+            });
+        });
+    </script>
+</body>
+</html>
